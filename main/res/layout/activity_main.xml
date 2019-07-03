@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0066ff"
+        app:titleTextColor="#ffffff">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_below="@+id/toolBar">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/logo" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/emailSignUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/roll_name"
+                        android:textColor="#000"
+                        android:maxLines="1"
+                        android:inputType="textEmailAddress"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:drawableStart="@drawable/ic_roll_black_24dp"
+                        android:drawablePadding="30dp"
+                        android:background="@android:color/transparent" />
+
+                </android.support.design.widget.TextInputLayout>
+                <View
+                    android:id="@+id/view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#71d2d2d2"
+                    android:layout_below="@+id/emailSignUp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/passSIgnUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password_name"
+                        android:textColor="#000"
+                        android:inputType="textPassword"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:drawableStart="@drawable/ic_password_blue_24dp"
+                        android:drawablePadding="30dp"
+                        android:background="@android:color/transparent" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <View
+                    android:id="@+id/view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#71d2d2d2"
+                    android:layout_below="@+id/passSIgnUp"/>
+                <Button
+                    android:id="@+id/signUPBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signUp_name"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_below="@+id/pass"
+                    android:background="#0066ff"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_registered"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/logINpage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="@string/log_in_here"
+                android:textColor="#0066ff"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher_background"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher_background"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher_background"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

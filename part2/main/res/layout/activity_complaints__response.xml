@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Complaints_Response"
+    android:orientation="vertical"
+    android:layout_margin="4dp">
+
+    <TextView
+        android:id="@+id/roomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_margin="4dp"/>
+    <TextView
+        android:id="@+id/complaintText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_margin="4dp"/>
+    <TextView
+        android:id="@+id/responseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_margin="4dp"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:hint="Enter Response"
+        android:textSize="20dp"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/okBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:text="OK"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/cancleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:text="Cancle"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Complaints Register Part 2</string>
+    <string name="hostel_name">Hostel</string>
+    <string name="room_name">Room No</string>
+    <string name="date_name">Date</string>
+    <string name="complaint_name">Complaint</string>
+    <string name="electrician_name">Electrician</string>
+    <string name="status_name">Status</string>
+    <string name="password_name">Password</string>
+    <string name="login_name">Login</string>
+    <string name="email_name">Email</string>
+    <string name="response">If you are going to take the request press Ok Button</string>
+</resources>

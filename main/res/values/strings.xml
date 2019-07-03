@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Complaint Register</string>
+    <string name="hostel_name">Hostel</string>
+    <string name="room_name">Room No</string>
+    <string name="date_name">Date</string>
+    <string name="complaint_name">Complaint</string>
+    <string name="electrician_name">Electrician</string>
+    <string name="status_name">Status</string>
+    <string name="signUp_name">Sign Up</string>
+    <string name="login_name">Log In</string>
+    <string name="roll_name">Roll No</string>
+    <string name="password_name">New Password</string>
+    <string name="info_name">Information</string>
+    <string name="enter_hostel">Enter Hostel</string>
+    <string name="enter_room_no">Enter Room No</string>
+    <string name="enter_complaint_details">Enter Complaint Details.</string>
+    <string name="submit_complaint">Submit Complaint</string>
+    <string name="already_have_a_account_log_in_here">Already have a account Log In Here</string>
+    <string name="already_registered">Already Registered ?</string>
+    <string name="log_in_here">Log In here</string>
+    <string name="otp_name">Otp</string>
+</resources>

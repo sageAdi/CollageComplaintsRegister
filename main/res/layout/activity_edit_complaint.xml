@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditComplaint"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/hostelDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_hostel"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawablePadding="30dp"
+        android:background="@android:color/transparent"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/roomDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_room_no"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:drawablePadding="30dp"
+        android:background="@android:color/transparent"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/complaintDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_complaint_details"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawablePadding="30dp"
+        android:background="@android:color/transparent"
+        android:inputType="text"/>
+    <Button
+        android:id="@+id/submitComplaintBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_complaint"
+        android:layout_marginTop="20dp"
+        android:layout_margin="4dp"/>
+</LinearLayout>
